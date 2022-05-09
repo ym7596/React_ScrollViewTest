@@ -1,0 +1,20 @@
+.box11 {
+    width: 400px;
+    border-color: purple;
+    border-width: 5px;
+    border-style: solid;
+    padding: 30px 50px;
+    margin: 150px 20px;
+}
+.box22 {
+    border-color: powderblue;
+    border-width: 10px;
+    border-style: solid;
+    padding: 60px 50px;
+    margin: 200px 100px;                
+}
+.box222 {
+    text-align: right;
+    margin-left: auto;
+    padding-right: 100px;
+}

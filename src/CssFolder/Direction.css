@@ -1,0 +1,170 @@
+.container1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Gangjo{
+    font-weight:bolder;
+    line-height: 0.5;
+}
+.NoGangjo{
+    line-height: 0.5;
+    font-size: small;
+}
+ul{
+    
+    list-style: none;
+    margin:10px;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.row li{
+  float:left;
+  margin-right: 15px;
+  
+}
+li a{
+    color:#222;
+    text-decoration: none;
+    font-size: small;
+    
+}
+.wrap_list {
+    margin-bottom: -7px;
+}
+.ico_subway {
+    overflow: hidden;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    background: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_200824.png) no-repeat;
+}
+.root_daum_roughmap .hide_text {
+    text-indent: -9999px;
+}
+.ico_subway02 {
+    background-position: -20px 0;
+}
+.ico_subway11 {
+    width: 34px;
+    background-position:-130px -20px;
+}
+li .bus {
+    display: inline-block;
+    margin: 10px 16px 6px 0;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.icon_busi {
+    overflow: hidden;
+    float: left;
+    width: 26px;
+    height: 16px;
+    margin-right: 6px;
+    font-size: 0;
+    line-height: 0;
+    background: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png) no-repeat;
+    text-indent: -9999px;
+}
+.wrap_list .txt {
+    display: block;
+    overflow: hidden;
+    
+   
+}
+.txt_bar {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 2px 5px 0;
+    background-color: #e2e2e2;
+    vertical-align: top;
+}
+.wrap_list .txt .txt_item {
+    float: left;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222;
+    letter-spacing: 0;
+    
+}
+.icon_buss{
+    background-position: -240px -410px;
+}
+.icon_buss2{
+    background-position: -210px -410px;
+}
+.icon_buss3{
+    background-position: -360px -410px;
+}
+.icon_bus {
+    overflow: hidden;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/roughMap/ico_bus.png) no-repeat;
+}
+.icon_bus1 {
+    background-position: 0 0;
+
+}
+.icon_bus2 {
+    background-position: 0 -20px;
+
+}
+
+.icon_bus4 {
+    background-position: 0 -40px;
+
+}
+.icon_bus5 {
+    background-position: 0 -60px;
+
+}
+.icon_bus6 {
+    background-position: 0 -80px;
+
+}
+.icon_bus7 {
+    background-position: 0 -100px;
+
+}
+.icon_bus8 {
+    background-position: 0 -120px;
+
+}
+.icon_bus9 {
+    background-position: 0 -140px;
+
+}
+.icon_bus10 {
+    background-position: 0 -160px;
+
+}
+.icon_bus11{
+    background-position: 0 -180px;
+
+}
+.icon_bus12{
+    background-position: 0 -200px;
+
+}
+.icon_bus13{
+    background-position: 0 -220px;
+
+}
+.icon_bus14{
+    background-position: 0 -240px;
+
+}
+.icon_bus15{
+    background-position: 0 -260px;
+
+}
+.icon_bus16{
+    background-position: 0 -280px;
+
+}
