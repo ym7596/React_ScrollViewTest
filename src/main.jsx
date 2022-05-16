@@ -9,11 +9,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './Components/Header';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <BrowserRouter>
     {/* <div id='header'><Header/></div> */}
     <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 )

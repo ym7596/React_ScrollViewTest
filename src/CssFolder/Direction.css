@@ -34,6 +34,7 @@ li a{
     margin-bottom: -7px;
 }
 .ico_subway {
+    margin-top: .3rem;
     overflow: hidden;
     float: left;
     width: 14px;
@@ -58,6 +59,7 @@ li .bus {
     vertical-align: top;
 }
 .icon_busi {
+    margin-top: .5rem;
     overflow: hidden;
     float: left;
     width: 26px;
@@ -100,6 +102,7 @@ li .bus {
     background-position: -360px -410px;
 }
 .icon_bus {
+    margin-top: .3rem;
     overflow: hidden;
     float: left;
     width: 18px;

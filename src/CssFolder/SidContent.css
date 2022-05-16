@@ -1,0 +1,32 @@
+#card1 {
+    width: auto;
+}
+.card-text{
+    font-size:.9rem;
+    padding: 2rem 1rem .8rem .1rem;
+    line-height: 1.6;
+   
+    
+}
+.card-body{
+    padding:3rem 0 !important;
+}
+@media screen and (min-width:576px) {
+    .img-fluid{
+        max-height: 100px;
+       width: auto;
+    }
+}
+@media screen and (min-width:992px) {
+    .img-fluid{
+        max-height: 100%;
+       width: auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .img-fluid{
+        max-height: 100%;
+       width: auto;
+    }
+}

@@ -1,4 +1,12 @@
 
+  #icon{
+    width:75px;
+    height: 75px;
+  }
+  #left{
+    float:left;
+    padding-left: .9rem;
+  }
   .bg-red {
     background-color: red;
   }

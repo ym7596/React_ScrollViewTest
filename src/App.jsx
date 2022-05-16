@@ -21,6 +21,10 @@ import Direction from './Components/Direction';
 import '../src/lang/i18n';
 import { useTranslation } from "react-i18next";
 import BTN from './Components/LangBtn';
+import SideC1 from './Components/SideC1';
+import SideC2 from './Components/SideC2';
+import SideC3 from './Components/SideC3';
+import Slide from 'react-reveal/Slide';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
@@ -36,9 +40,14 @@ const originalColors = ['#ff5f45', '#0798ec', '#fc6c7c', '#435b71', 'orange', 'b
 
 class App extends React.Component {
  
-
+ constructor(props){
+   super(props);
+   this.state = {show:false};
+   this.onLeave = this.onLeave.bind(this);
+ }
   onLeave(origin, destination, direction) {
     console.log('onLeave', { origin, destination, direction });
+    this.setState({show:!this.state.show});
     // arguments are mapped in order of fullpage.js callback arguments do something
     // with the event
   }
@@ -65,31 +74,32 @@ class App extends React.Component {
         top: 0,
         zIndex: 100,
         background: '#ffffff',
-        padding: '0px 10px 0 0'
+        padding: '0 0 0 0'
         }}
-      >
-        <Navbar>
-          <Navbar.Brand href='/'><img src="/src/static/android-icon-72x72.png" /></Navbar.Brand>
-        <Navbar.Collapse className='justify-content-start' >
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a onClick={() => this.moveSectionWhere(2)}>  콘텐츠  </a>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-          <a  onClick={() => this.moveSectionWhere(5)}>  비즈니스  </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a  onClick={() => this.moveSectionWhere(5)}>  가이드  </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a  onClick={() => this.moveSectionWhere(5)}>  지원  </a>
-          
-        </Navbar.Collapse>
-        <Navbar.Collapse className='justify-content-end' >
-        <NavDropdown title="언어" id="basic-nav-dropdown">
-          <NavDropdown.Item><BTN name = "ko" title = "한국어"> dd</BTN></NavDropdown.Item>
-          <NavDropdown.Item><BTN name = "en" title = "English"></BTN></NavDropdown.Item>
-          <NavDropdown.Item>기타</NavDropdown.Item>
-          
-        </NavDropdown>
-        </Navbar.Collapse>
-        </Navbar>
+       >
+      <Navbar expand="lg">
+      <Navbar.Brand href="/"><img src="/src/assets/Logo_clear.png" id='icon' /></Navbar.Brand>
+  <Container fluid>
+    
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="/" id='left'><a onClick={() => this.moveSectionWhere(2)}>  콘텐츠  </a></Nav.Link>
+        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(3)}>  비즈니스  </a></Nav.Link>
+        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(4)}>  가이드  </a></Nav.Link>
+        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(4)}>  지원  </a></Nav.Link>
+        </Nav>
+       <Nav>
+              <NavDropdown  title="언어" id="collasible-nav-dropdown">
+                  <NavDropdown.Item><BTN name = "ko" title = "한국어"> dd</BTN></NavDropdown.Item>
+                    <NavDropdown.Item><BTN name = "en" title = "English"></BTN></NavDropdown.Item>
+            </NavDropdown>
+            </Nav> 
+     
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+      
       </div>
     );
 
@@ -105,7 +115,7 @@ class App extends React.Component {
           // fullpage options
           licenseKey={'77DAE9DB-92D74E11-801E1995-CED563A4'} // Get one from https://alvarotrigo.com/fullPage/pricing/
           navigation
-          anchors={['firstPage', 'secondPage', 'thirdPage']}
+          anchors={['firstPage', 'secondPage', 'thirdPage','fourthPage']}
           
           onLeave={this.onLeave.bind(this)}
           
@@ -118,26 +128,38 @@ class App extends React.Component {
               ))} */}
               <div id='wrapper'>
             <div className='section' id='section1'>
+             
              <First />
              
             </div>
           <div className="section" id='section2'>
+          <Slide left when={this.state.show}>
             <Second />
+            </Slide>
           </div>
           <div className="section" id='section2'>
+          <Slide right when={!this.state.show}>
             <Second2 />
+            </Slide>
           </div>
           <div className="section" id='section2'>
+          <Slide left when={this.state.show}>
             <Second3 />
+            </Slide>
           </div>
           <div className="section" id='sectioncard'>
               <div className='slide'>
                   <Side2/>
               </div>
               <div className='slide'>
-                  <Side1/>
+                  <SideC1/>
               </div>
-            
+              <div className='slide'>
+                  <SideC2/>
+              </div>
+              <div className='slide'>
+                  <SideC3/>
+              </div>
           </div>
          
           <div className='section' id='sectionfoot'>          
