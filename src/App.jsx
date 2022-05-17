@@ -25,6 +25,7 @@ import SideC1 from './Components/SideC1';
 import SideC2 from './Components/SideC2';
 import SideC3 from './Components/SideC3';
 import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
@@ -133,24 +134,24 @@ class App extends React.Component {
              
             </div>
           <div className="section" id='section2'>
-          <Slide left when={this.state.show}>
+          <Bounce  right when={this.state.show}>
             <Second />
-            </Slide>
+            </Bounce >
           </div>
           <div className="section" id='section2'>
-          <Slide right when={!this.state.show}>
+          <Bounce  left when={!this.state.show}>
             <Second2 />
-            </Slide>
+            </Bounce >
           </div>
           <div className="section" id='section2'>
-          <Slide left when={this.state.show}>
+          <Bounce  right when={this.state.show}>
             <Second3 />
-            </Slide>
+            </Bounce >
           </div>
           <div className="section" id='sectioncard'>
-              <div className='slide'>
+              {/* <div className='slide'>
                   <Side2/>
-              </div>
+              </div> */}
               <div className='slide'>
                   <SideC1/>
               </div>
