@@ -11,14 +11,14 @@ const Second = () => {
     return(
         <div className='container-fluid'>
             <div className='row'>
-            <div className='col-md-6 col-xs-3'>
+            <div className='col-md-6 col-xs-3 col-12'>
                
                     
                     <div className='textbox'>
-                            <div className='row'>
+                           
                                     <h1  id='hh1'>BNPLO</h1>
                             
-                            <h5>
+                           
                                         먼저 구매하고 나중에 결제하자!<br/>
                                         회원제 온라인 쇼핑몰 뿐만 아니라<br/>
                                         사람들과 함께 사이버 백화점에서<br/>
@@ -26,15 +26,15 @@ const Second = () => {
                                         VR을 통해 직접 구매할 상품을<br/>
                                         착용 및 사용 후 구매할 수 있습니다.<br/>
                                         
-                            </h5>
-                        </div>
+                           
+                     
                     
                         
                     </div>
                 
                 
             </div>
-           <div className='col-md-6 col-xs-3'> 
+           <div className='col-md-6 col-xs-3 col-12'> 
                 <div className='imgbox'>
                     <img src={thisimg} className='img-fluid' alt='...'></img>
                 </div>

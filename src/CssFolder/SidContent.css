@@ -12,20 +12,21 @@
     padding:3rem 0 !important;
 }
 @media screen and (min-width:576px) {
-    .img-fluid{
-        max-height: 100px;
+    .img-fluid2{
+        max-height: 10%;
        width: auto;
     }
+ 
 }
 @media screen and (min-width:992px) {
-    .img-fluid{
-        max-height: 100%;
+    .img-fluid2{
+        max-height: 60%;
        width: auto;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .img-fluid{
+    .img-fluid2{
         max-height: 100%;
        width: auto;
     }

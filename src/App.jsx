@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import  {Routes, Route,Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Fullpage from './Fullpage';
-
+import thisLogo from './assets/Logo_clear.png';
 import '../src/App.css';
 import Headerr from './Components/Header';
 import ReactFullpage from '@fullpage/react-fullpage';
@@ -78,7 +78,7 @@ class App extends React.Component {
         }}
        >
       <Navbar expand="lg">
-      <Navbar.Brand href="/"><img src="/src/assets/Logo_clear.png" id='icon' /></Navbar.Brand>
+      <Navbar.Brand href="/"><img src={thisLogo} id='icon' /></Navbar.Brand>
   <Container fluid>
     
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -148,9 +148,7 @@ class App extends React.Component {
             </Slide>
           </div>
           <div className="section" id='sectioncard'>
-              <div className='slide'>
-                  <Side2/>
-              </div>
+             
               <div className='slide'>
                   <SideC1/>
               </div>

@@ -7,18 +7,17 @@ const Second = () => {
     return(
         <div className='container-fluid'>
             <div className='row'>
-                <div className='col-md-6  col-xs-3'>
-                    <div className='imgbox2'>
+                <div className='col-md-6  col-xs-3 col-12'>
+                    
                         <img src={thisimg} className='img-fluid' alt='...'></img>
-                    </div>
+                    
                 </div>
-                <div className='col-md-6  col-xs-3'>
+                <div className='col-md-6  col-xs-3 col-12'>
                     <div className='textbox2'>
-                        <div className='row'>
-                            
+                        
                             <h1 id ='hh1'>LIVE CHANNEL</h1>
                             
-                            <h5>
+                            
                                 백화점 상품에 대한 쇼핑 라이브 진행과<br/>
                                 모든 사용자에 대한<br/>
                                 크리에이티비티를 발휘할 수 있는<br/>
@@ -27,8 +26,7 @@ const Second = () => {
                                 광고 서비스를 이용하여<br />
                                 옥외 광고 진행이 가능합니다.
                                 
-                                </h5>
-                        </div> 
+                                
                         
                         </div>   
                 </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../CssFolder/Footer.css';
-
+import thisLogo from '../assets/Logo_clear.png';
 function Footer() {
     return (
         <div className='main-footer'>
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-sm-6">
-                    <p> <img src="/src/assets/Logo_clear.png" id='icon' /></p>
+                    <p> <img src={thisLogo} id='icon' /></p>
                         <p className='firstp'>업체명 (주)메타플로</p>
                         <p className='firstp'>대표자 김한길</p>
                         <p className='firstp'>사업자 등록번호 190-86-02737</p>
