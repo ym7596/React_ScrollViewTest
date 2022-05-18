@@ -11,22 +11,23 @@
 .card-body{
     padding:3rem 0 !important;
 }
-@media screen and (min-width:576px) {
-    .img-fluid2{
-        max-height: 10%;
-       width: auto;
+@media screen and (max-width:767px) {
+    .img-fluid{
+        max-height: 70%;
+        width: 100%;
+      
     }
  
 }
 @media screen and (min-width:992px) {
-    .img-fluid2{
+    .img-fluid{
         max-height: 60%;
        width: auto;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .img-fluid2{
+    .img-fluid{
         max-height: 100%;
        width: auto;
     }

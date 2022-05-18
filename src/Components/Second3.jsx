@@ -5,7 +5,7 @@ import thisimg from '../assets/33.jpg';
 const Second3 = () => {
     const { t } = useTranslation();
     return(
-        <div className='container-fluid'>
+        <div className='container'>
             <div className='row'>
                 
                 <div className='col-md-6 col-12'>

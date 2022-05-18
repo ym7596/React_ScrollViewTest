@@ -5,11 +5,11 @@ import thisimg from '../assets/2.jpg';
 const Second = () => {
     const { t } = useTranslation();
     return(
-        <div className='container-fluid'>
+        <div className='container'>
             <div className='row'>
                 <div className='col-md-6  col-xs-3 col-12'>
                     
-                        <img src={thisimg} className='img-fluid' alt='...'></img>
+                        <img src={thisimg} className='img-fluid mx-auto d-block' alt='...'></img>
                     
                 </div>
                 <div className='col-md-6  col-xs-3 col-12'>
