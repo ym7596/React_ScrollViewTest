@@ -8,7 +8,7 @@ const Direction = () => {
     
     return(
            <div className='container'>
-               <div className='row  align-self-center text-center my-3'>
+               <div className='row  align-self-center text-center my-5'>
                    <h1>찾아오시는 길</h1>
                </div>
                <div className='row justify-content-around'>
@@ -20,16 +20,16 @@ const Direction = () => {
                                 <div className='col-md-10'><p className='NoGangjo'>서울 서초구 서초대로78길 28, 5층 (주)메타플로</p></div>
                               
                             </div>
-                            <div className='row'>
+                            <div className='row'   id='nonedis'>
                                 <div className='col-md-2'><p className='Gangjo'>전화</p></div>
                                 <div className='col-md-10'><p className='NoGangjo'>02-6959-2270</p></div>
                                 
                             </div>
-                            <hr/>
-                            <div className='row'>
+                            <hr   id='nonedis' />
+                            <div className='row'  id='nonedis'>
                                 <p className='Gangjo'>주변 지하철</p>
                             </div>
-                            <div className='row'>
+                            <div className='row'  id='nonedis'>
                                 
                                 <ul>
                                     <li>
@@ -47,8 +47,8 @@ const Direction = () => {
                                     </li>
                                 </ul>
                                 </div>
-                            <hr/>
-                            <div className='row'>
+                            <hr   id='nonedis'/>
+                            <div className='row'  id='nonedis'>
                                 {/* 여기서부터 주변정류장~5칸 */}
                                 <div className='row'> 
                                 <p className='Gangjo'>주변 정류장</p>
@@ -119,20 +119,15 @@ const Direction = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <hr/>
-                            <div className='row'>
+                            <hr   id='nonedis'/>
+                            <div className='row'  id='nonedis'>
                                 <div className='row'>
                                     <p className='Gangjo'>주변 버스</p>
                                 </div>
                                 <div className='row'>
                                     
                                         <ul className='wrap_list'>
-                                            <li>
-                                                <span className='icon_busi icon_buss'></span>
-                                                <span className='txt'>
                                             
-                                                </span>
-                                            </li>
                                             <li>
                                                 <span className='icon_busi icon_buss2'>시외</span>
                                                 <span className='txt'>
@@ -163,10 +158,7 @@ const Direction = () => {
                 
                </div>
                <hr></hr>
-                <div className='row'>
-                    <Footer />
-                </div>
-            
+               
            </div>
                
 

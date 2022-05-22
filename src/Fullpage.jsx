@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
-import "fullpage.js/vendors/scrolloverflow";
+
 import '../src/App.css';
 
 import App from './App';
@@ -26,6 +26,8 @@ const Fullpage = (props) => (
   <ReactFullpage
   
     //fullpage options
+    
+    debug = {false}
     licenseKey = {'77DAE9DB-92D74E11-801E1995-CED563A4'}
     scrollingSpeed = {1000} /* Options here */
     

@@ -1,49 +1,27 @@
-.box11 {
-    width: 400px;
-    border-color: purple;
-    border-width: 5px;
-    border-style: solid;
-    padding: 30px 50px;
-    margin: 150px 20px;
+.container{
+    padding-top: 5.5em;
 }
-.box22 {
-    border-color: powderblue;
-    border-width: 10px;
-    border-style: solid;
-    padding: 60px 50px;
-    margin: 200px 100px;                
-}
-.box222 {
-    text-align: right;
-    margin-left: auto;
-    padding-right: 100px;
-}
-#hh1{
-    margin-bottom: 3rem;
-}
-.row .h5{
-    
-    margin-bottom: 2rem;
-}
-.row .h1{
-    margin-bottom: 2rem;
-}
+
 .textbox2 {
   
     text-align: left;
     float:left;
-    
+    margin-top: 10em;
 }
 .textbox {
-  
+    
     text-align: right;
     float:right;
+    margin-top: 10em;
+    
+    
+    
 }
 .imgbox {
     
     
     float:left;
-   
+    display: table-cell; 
     height: auto;
     max-height: 50%;
 }

@@ -4,6 +4,12 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:767px) {
+    #nonedis{
+        display: none;
+    }
+ 
+}
 .Gangjo{
     font-weight:bolder;
     line-height: 0.5;
@@ -59,7 +65,7 @@ li .bus {
     vertical-align: top;
 }
 .icon_busi {
-    margin-top: .5rem;
+    margin-top: 0.1rem;
     overflow: hidden;
     float: left;
     width: 26px;

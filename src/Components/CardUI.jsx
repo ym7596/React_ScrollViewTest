@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import '../CssFolder/Sids.css';
+
 const Cardi = props => {
     return(
         <div className='card-group'>

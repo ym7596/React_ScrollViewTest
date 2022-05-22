@@ -26,6 +26,7 @@ import SideC2 from './Components/SideC2';
 import SideC3 from './Components/SideC3';
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
+import Footer from './Components/Footer';
 const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
@@ -47,7 +48,7 @@ class App extends React.Component {
    this.onLeave = this.onLeave.bind(this);
  }
   onLeave(origin, destination, direction) {
-    console.log('onLeave', { origin, destination, direction });
+   // console.log('onLeave', { origin, destination, direction });
     this.setState({show:!this.state.show});
     // arguments are mapped in order of fullpage.js callback arguments do something
     // with the event
@@ -65,43 +66,27 @@ class App extends React.Component {
   
 
     const Menu = () => (
-      <div
-      className="navbar"
-      style={{
-        height: '80px',
-		display:'block',
-		width: '100%',
-        position: 'fixed',
-        top: 0,
-        zIndex: 100,
-        background: '#ffffff',
-        padding: '0 0 0 0'
-        }}
-       >
-      <Navbar expand="lg">
-      <Navbar.Brand href="/"><img src={thisLogo} id='icon' /></Navbar.Brand>
-  <Container fluid>
-    
+      <Navbar fixed='top' collapseOnSelect expand="lg" bg="white" >
+    <Container fluid>
+    <Navbar.Brand href="#home"><img src={thisLogo} id='icon'></img></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="/" id='left'><a onClick={() => this.moveSectionWhere(2)}>  콘텐츠  </a></Nav.Link>
-        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(3)}>  비즈니스  </a></Nav.Link>
-        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(4)}>  가이드  </a></Nav.Link>
-        <Nav.Link id='left'><a onClick={() => this.moveSectionWhere(4)}>  지원  </a></Nav.Link>
-        </Nav>
-       <Nav>
-              <NavDropdown  title="언어" id="collasible-nav-dropdown">
-                  <NavDropdown.Item><BTN name = "ko" title = "한국어"> dd</BTN></NavDropdown.Item>
-                    <NavDropdown.Item><BTN name = "en" title = "English"></BTN></NavDropdown.Item>
-            </NavDropdown>
-            </Nav> 
-     
+        
+           <Nav.Link onClick={() => this.moveSectionWhere(1)}>콘텐츠</Nav.Link>
+           <Nav.Link onClick={() => this.moveSectionWhere(1)}>비즈니스</Nav.Link>
+           <Nav.Link  onClick={() => this.moveSectionWhere(1)}>가이드</Nav.Link>
+           <Nav.Link  onClick={() => this.moveSectionWhere(6)}>지원</Nav.Link>
+      </Nav>
+      <Nav>
+      <NavDropdown title="언어" id="collasible-nav-dropdown">
+          <NavDropdown.Item><BTN name = "ko" title = "한국어"> dd</BTN></NavDropdown.Item>
+          <NavDropdown.Item><BTN name = "en" title = "English"></BTN></NavDropdown.Item>
+        </NavDropdown>
+      </Nav>
     </Navbar.Collapse>
-  </Container>
-</Navbar>
-      
-      </div>
+    </Container>
+  </Navbar>
     );
 
     return (
@@ -165,6 +150,9 @@ class App extends React.Component {
                  
                 <Direction />             
                
+          </div>
+          <div className='section'>
+            <Footer />
           </div>
           </div>
             </ReactFullpage.Wrapper>
