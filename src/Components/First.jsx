@@ -6,10 +6,10 @@ const First = () => {
     return(
         <div className='container'>
             {/* <h1>{t("Title")}</h1> */}
-            <h1>당신이 꿈꾸어왔던 모든 것</h1>
-            <h1>시간과 공간을 초월한 만남.</h1>
+            <h1>{t("F_Docu")}</h1>
+            <h1>{t("F_Docu2")}</h1>
             <br/>
-            <h1>METAPLO</h1>
+            <h1>{t("F_Title")}</h1>
         </div>
         
     )

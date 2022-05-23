@@ -8,7 +8,7 @@ const Button = (props) => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-    return <button class='button' onClick={() => changeLanguage(what)}>{lang}</button>;
+    return <button className='button' onClick={() => changeLanguage(what)}>{lang}</button>;
   }
   
   export default Button;
